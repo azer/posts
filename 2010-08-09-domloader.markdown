@@ -12,9 +12,9 @@ date: 08-08-2010
 
 I’m glad to announce the library I’ve been working on; DOMLoader, which does handle DOM dependencies of web applications. The objective of this project is to increase reusability and maintainability of elements like apps, widgets, plugins and even libraries of a web project. In detail, here are some aims and goals of DOMLoader:
 
-* *(Not) Building*: Since dependencies like Javascript and CSS documents are growing parallel with the project and users want to be able to customize and load the part that they want, it’s not a great idea to build all source code into just one file and load it on initialization.
+* *Modular Building*: Since dependencies like Javascript and CSS documents are growing parallel with the project and users want to be able to customize and load the part that they want, it’s not a great idea to build all source code into just one file and load it on initialization. 
 
-* *Reusability*: Both of the mechanisms loading dependencies of a web page serverside and clientside would be able to calculate dependencies of any element of a project. Nevertheless, complete isolation of every single component of the project is vital to make reusable different pieces of the application we develop. Moreover, I would be able to import an application located on another domain (e.g: Firebug Lite) to my web page, without using iframe element if needed. Because of this needs, DOMLoader bases dependency definition documents and supports XML and JSON by default.
+* *Reusability*: Both of the mechanisms loading dependencies of a web page serverside and clientside would be able to calculate dependencies of any element of a project. Nevertheless, complete isolation of every single element of the project is vital to make reusable different pieces of the application we develop. Moreover, developers would be able to import an application located on another domain (e.g: Firebug Lite) to my web page, without using iframe element if needed. Because of this needs, DOMLoader bases dependency definition documents and supports XML and JSON by default.
 
 * *Maintainability*: Because it makes the elements like widgets replaceable and easy to develop because of taking advantage of seperation, complete isolation is the key thing to increase maintainability of the project.
 
