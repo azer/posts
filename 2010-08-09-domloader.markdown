@@ -6,24 +6,25 @@ categories:
   - projects
   - javascript
   - css
+  - dependency injection
+
 
 date: 08-08-2010
 ---
+I'm glad to announce the new library I've been working on; DOMLoader, which does handle dependencies of web applications by
+providing a simple dependency injection mechanism using dependency definitions from XML or JSON files. The objective of this
+project is to increase reusability and maintainability of the building blocks of web projects without increasing
+complexity. In detail, here are some aims and goals of DOMLoader; 
 
-I’m glad to announce the library I’ve been working on; DOMLoader, which does handle DOM dependencies of web applications. The
-objective of this project is to increase reusability and maintainability of elements like apps, widgets, plugins and even
-libraries of a web project. In detail, here are some aims and goals of DOMLoader:
+* *Decoupling:* This approach also lets you to design elements like widget,plugin, application etc. of your project completely seperated and make lifecycle
+  of elements like widget, plugin, application etc. of a project to be handled using references.
 
-* *Reusability*: Both of the mechanisms loading dependencies of a web page serverside and clientside would be able to calculate dependencies of any element of a project. Nevertheless, complete isolation of every single element of the project is vital to make reusable different pieces of the application we develop. Moreover, developers would be able to import an application located on another domain (e.g: Firebug Lite) to my web page, without using iframe element if needed. Because of this needs, DOMLoader bases dependency definition documents and supports XML and JSON by default.
+* *Low Coupling*: DOMLoader is an unobtrusive library and does depends on nothing except JSON or XML support of the web
+  browser running it. What is more is that, the DOMLoader itself can be replaced with an alternative mechanism easily.
 
-* *Maintainability*: Because it makes the elements like widgets replaceable and easy to develop because of taking advantage of seperation, complete isolation is the key thing to increase maintainability of the project.
-
-* *Low Coupling*: DOMLoader is an unobtrusive library and does depends on nothing except JSON or XML support of the web browser running it. What is more is that, the DOMLoader itself can be replaced with an alternative mechanism easily.
-
-* *Modular Building*: Since dependencies like Javascript and CSS documents are growing parallel with the project and users
-  want to be able to customize and load the part that they want, it’s not a great idea to build all source code into just one
-  file and load it on initialization. Instead of this, you can code an automation tool calling built/compressed sources of
-  the pieces of your application. 
+* *Reusability:* The dependency definition files that DOMLoader bases can be accessed and processed by most of the major
+  browsers, backend apps,  build automation tools, command line interfaces, anygq platform where you can read any data
+  serialization format...
 
 ## Getting Started
 
@@ -38,21 +39,19 @@ like as follows for every project keep isolated constituents of my projects:
     - widgets/
 {% endhighlight %}
 
-## Defining Dependencies
-
 Now let’s get our hands dirty. Assuming that we’ll code one or more web applications which will be consisting of several DOM
 widgets demanded to be pluggable and isolated from other widgets and the application including it, we’re starting coding our
 new project from developing the widgets firstly.  Here it comes the first one:
 
 {% highlight xml %}
-    /my_project/widgets/foobar/index.xml
+/my_project/widgets/foobar/index.xml
 
-    <widget>
-      <dependencies>
-        <script src=”foobar.js” />
-        <stylesheet src=”foobar.css” />
-      </dependencies>
-    </widget>
+<widget>
+  <dependencies>
+    <script src=”foobar.js” />
+    <stylesheet src=”foobar.css” />
+  </dependencies>
+</widget>
 {% endhighlight %}
 
 ## Import
@@ -63,22 +62,22 @@ dependencies in another element named “dependencies”. As you guess, script (
 stylesheet represent javascript and CSS documents respectively. Now let’s code a web page importing this widget:
    
 {% highlight html %}
-    foobar.html
-    
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <script type=”text/javascript” src=”domloader.js”></script>
-        <script type=”text/javascript”>
-          domloader.load(‘path/to/my_project/widgets/foobar/index.xml’,function(){
-            var fb = new FoobarWidget();
-            /* … */
-          });
-        </script>
-      </head>
-      <body>
-      </body>
-    </html>
+foobar.html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type=”text/javascript” src=”domloader.js”></script>
+    <script type=”text/javascript”>
+      domloader.load('path/to/my_project/widgets/foobar/index.xml',function(){
+        var fb = new FoobarWidget();
+        /* … */
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
 {% endhighlight %}
 
 ## Nesting
@@ -87,15 +86,15 @@ It’s that simple to import a widget with all of the dependencies. But as you e
 complicated to designate advantage of using DOMLoader:
 
 {% highlight xml %}
-    /my_project/widgets/foobar-wrapper/index.xml
+/my_project/widgets/foobar-wrapper/index.xml
 
-    <widget>
-      <dependencies>
-        <script src=”foobar-wrapper.js” />
-        <stylesheet src=”themes/default/main.css” />
-        <widget src=”../foobar/index.xml” />
-      </dependencies>
-    </widget>
+<widget>
+  <dependencies>
+    <script src=”foobar-wrapper.js” />
+    <stylesheet src=”themes/default/main.css” />
+    <widget src=”../foobar/index.xml” />
+  </dependencies>
+</widget>
 {% endhighlight %}
 
 This example above demonstrates creating a widget wrapping another one, using widget element to import dependencies of
@@ -103,9 +102,9 @@ another widget. As you guess, widget is just alias indicating index dependency i
 equivelent of this two import examples: 
 
 {% highlight xml %}
-    <index src=”../foobar/index.xml” />
+<index src=”../foobar/index.xml” />
 
-    <application src=”../foobar/index.xml” />
+<application src=”../foobar/index.xml” />
 {% endhighlight %}
 
 ## Object Dependencies
@@ -113,14 +112,14 @@ equivelent of this two import examples:
 To demonstrate another type of dependency, object dependencies, we're going to create one more widget named baz:
 
 {% highlight xml %}
-    /my_project/widgets/baz/index.xml
+/my_project/widgets/baz/index.xml
 
-    <widget>
-      <dependencies>
-        <script src=”baz.js” />
-        <object name=”jQuery” src=”http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js” />
-      </dependencies>
-    </widget>
+<widget>
+  <dependencies>
+    <script src=”baz.js” />
+    <object name=”jQuery” src=”http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js” />
+  </dependencies>
+</widget>
 {% endhighlight %}
 
 As you’ve noticed, I’ve defined jQuery as an object dependency in the fourth line of the example above. Since it’s possible
@@ -130,51 +129,51 @@ expect, DOMLoader will load jQuery’s source if only global context has not a v
 variable testing, property elements make possible to add more specific conditions using regular expressions:
 
 {% highlight xml %}
-    <object
-      name=’jQuery’
-      src=”http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js”>
-      <property name=’jQuery.fn.jquery’ match=’1.4.[2-9]' />
-    </object>
+<object
+  name='jQuery'
+  src=”http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js”>
+  <property name='jQuery.fn.jquery’ match=’1.4.[2-9]' />
+</object>
 {% endhighlight %}
 
 The only thing remaining to be done to complete our example is definition of an application gathering some widgets now, which
 doesn’t differ from widget or other index definitions. I guess we’re now ready to get it done;
 
 {% highlight xml %}
-    /my_project/apps/hello_world/index.xml
+/my_project/apps/hello_world/index.xml
 
-    <application>
-      <dependencies>
-        <widget src=’../../widgets/foobar-wrapper/index.xml’ />
-        <widget src=’../../widgets/baz/index.xml’ />
-      </dependencies>
-    </application>
+<application>
+  <dependencies>
+    <widget src='../../widgets/foobar-wrapper/index.xml' />
+    <widget src='../../widgets/baz/index.xml' />
+  </dependencies>
+</application>
 {% endhighlight %}
 
 And here is the example of importing the application we’ve defined above, almost same as the widget import example:
 
 {% highlight html %}
-    hello_world.html
+hello_world.html
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <script type=”text/javascript” src=”domloader.js”></script>
-        <script type=”text/javascript”>
-          domloader.load(‘path/to/my_project/apps/hello_world/index.xml’,function(){
-            var fwb = new FoobarWrapperWidget();
-            var baz = new BazWidget();
-            /* … */
-          });
-        </script>
-      </head>
-      <body>
-      </body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type=”text/javascript” src=”domloader.js”></script>
+    <script type=”text/javascript”>
+      domloader.load('path/to/my_project/apps/hello_world/index.xml',function(){
+        var fwb = new FoobarWrapperWidget();
+        var baz = new BazWidget();
+        /* … */
+      });
+    </script>
+  </head>
+  <body>
+  </body>
   </html>
 {% endhighlight %}
 
 Since I’ve coded these examples using metasyntactic namings to make it easier to read and understand, it’s not available to
-download but you can check these working examples and also several example documents coded for testing can be found at the
+download but you can check [these working examples](http://github.com/azer/roka-examples) and also several example documents coded for testing can be found at the
 project repository.
 
 I hope this document would be helpful to get started using DOMLoader in your projects. In the next blog posts I’ll tell about
