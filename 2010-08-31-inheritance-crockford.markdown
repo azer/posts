@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Douglas Crockford on Inheritance 
 quote: true
 categories:
   - javascriot

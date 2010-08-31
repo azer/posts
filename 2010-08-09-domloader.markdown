@@ -28,7 +28,8 @@ complexity. In detail, here are some aims and goals of DOMLoader;
 
 ## Getting Started
 
-To get started to use DOMLoader, all we need to do is to download latest version of DOMloader and put it in a directory which
+To get started to use DOMLoader, the first thing to do is to [download latest version of
+DOMLoader](http://github.com/azer/domloader/downloads) and put it in a directory which
 can be accessible from the web page from which we will import it. To take advantage of DOMLoader, I create a directory tree
 like as follows for every project keep isolated constituents of my projects:
  
@@ -178,7 +179,8 @@ project repository.
 
 I hope this document would be helpful to get started using DOMLoader in your projects. In the next blog posts I’ll tell about
 using JSON and other formats like YAML and another feature of DOMLoader providing namespace initialization which will be very
-important to take advantage of the “async” attribute coming with HTML5. 
+important to take advantage of the [“async” attribute coming with
+HTML5](http://www.whatwg.org/specs/web-apps/current-work/#attr-script-async). 
 
 Nevertheless, please feel free to share your opinions and any kind of contributions with me. For now, here are the another
 pages/examples would be helpful to learn more about DOMLoader:
