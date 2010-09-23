@@ -3,7 +3,7 @@ layout: post
 title: Douglas Crockford on Inheritance 
 quote: true
 categories:
-  - javascriot
+  - javascript
   - oop
   - douglas-crockford
   - quotes

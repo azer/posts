@@ -1,0 +1,34 @@
+---
+layout: post
+title: Thoughts on IE9 and Teleportation
+categories:
+  - web-browsers
+  - rendering-engines
+  - internet-explorer
+  - microsoft
+  - safari
+  - mobile-safari
+  - iphone
+  - teleportation
+
+date: 23-09-2010
+name: blog
+---
+I'm one of those who can't find any chance to try new version of Internet Explorer, since it's a necessity to buy a new operating system and even hardware to just try a new
+release of the browser which have been blocking new tehchnics by taking advantage of worldwide distribution power, for years. I'm pretty happy to see great technical effort on
+the future of Internet Explorer but it's disappointment to see that there is nothing changed about business approach of Microsoft that seems to believe that they can act like
+an oil company, control all of the production devices, and this is why I'm still not excited about Internet Explorer. This may sound like, I'm a big fan of other software
+companies embraced more social business models, which is not my viewpoint. I'm following IEBlog and learning lots of things from the posts about their development experiences,
+also think that MSDN is one of the great resources for us. The only think with which I'm not ok is business model of Microsoft products and Internet Explorer is the only Microsoft
+product I'm highly interested at.
+
+In the other words, Web is an human made universe growing instantly and its environment includes necessary resources and basic production devices to us.
+The only difference is that web lets us to live peacefully without borders, governments, militaries. Distribution is very easy, we have teleportation to distribute our
+products. And the wonderful thing is that we get teleportation devices by using teleportation! For free! What a technology! The only problem we've been trying hard to solve is
+a group of people that isn't aware of new teleportation tools since they preferred to live in Richie Rich's private properties because they think it's very comfortable. 
+
+To summarize, the main issue about web is whether to take advantage of modern distribution methods or not. And Internet Explorer isn't the only browser which belongs to a company, we
+have Safari and several mobile browsers, too. The only difference between first version of IPhone's mobile browser with Internet Explorer 6 is that Iphone's browser is a
+little better, not much. Distribution methods are almost same, companies are different. 
+
+vim: tw=175
