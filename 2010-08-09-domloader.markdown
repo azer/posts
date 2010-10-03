@@ -11,6 +11,12 @@ categories:
 
 date: 08-08-2010
 ---
+_**Update:** DOMLoader has recently been [restructured](http://github.com/azer/domloader/compare/25fb6f1d56...f220cb663a) and
+now it lies upon [CommonJS modules](http://commonjs.org/specs/modules/1.0) being built by the new tool I've developed,
+[JSBuild](http://github.com/azer/jsbuild). After the post below, I started to improve it to announce a better version with
+some cool features like custom dependencies, aliases etc. and now it's finally ready to announce. Since it tells about the
+idea behind DOMLoader project and demonstrates its basic usage, this blog post is still not out of date._ 
+
 I'm glad to announce the new library I've been working on; DOMLoader, which does handle dependencies of web applications by
 providing a simple dependency injection mechanism using dependency definitions from XML or JSON files. The objective of this
 project is to increase reusability and maintainability of the building blocks of web projects without increasing
