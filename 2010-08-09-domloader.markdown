@@ -6,7 +6,7 @@ categories:
   - projects
   - javascript
   - css
-  - dependency injection
+  - dependency-injection
 
 
 date: 08-08-2010
