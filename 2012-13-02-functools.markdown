@@ -11,7 +11,7 @@ categories:
   - function-composition
   - juxtaposition
 
-date: 07-02-2012
+date: 13-02-2012
 name: blog
 ---
 [Functools](http://github.com/azer/functools) is a minimal JavaScript library
