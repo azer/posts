@@ -78,12 +78,12 @@ I also coded an unnecessary wallpaper package without checking out man page of a
 {% highlight lua %}
 ----------------------
 -- Random Wallpaper Package For Awesome WM
--- Azer Koculu <azerkoculu@gmail.com>
+-- Azer Koculu <azer@kodfabrik.com>
 --
 -- EXAMPLE USAGE
 -- ------------
 -- require "wallpaper"
--- theme.wallpaper_cmd = "awsetbg " .. wallpaper.pick( wallpaper.collect { "/home/foo/pic/wal1", "/home/foo/pic/wal2" } )
+-- theme.wallpaper_cmd = "awsetbg " .. wallpaper.pick( wallpaper.collect { "pics/wal1", "pics/wal2" } )
 --
 ----------------------
 local image_extensions = { jpg=true, png=true }
