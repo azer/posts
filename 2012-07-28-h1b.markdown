@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yazilim Gelistirici Olarak ABD'ye Tasinmak
+title: Yazilim Gelistirici Olarak ABD'de Calisma Vizesi Almak
 categories:
   - turkce
   - usa
@@ -11,14 +11,14 @@ categories:
 date: 28-07-2012
 name: blog
 ---
-Bu blog yazisinda ABD'ye calisma izni almak isteyen yazilimcilar icin yasadigim
+Bu blog yazisinda [ABD'de calisma izni](http://en.wikipedia.org/wiki/H-1B_visa) almak isteyen yazilimcilar icin yasadigim
 deneyimleri aktaracagim.  Umarim "gerekli" oldugunu dusunenlere -ozelliklere
-benim gibi 4 yillik diplomasi olmayan genc arkadaslara- ulasir ve islerine
+benim gibi 4 yillik diplomasi olmayan arkadaslara- ulasir ve islerine
 yarar. 
 
 # Giris
 
-Yazinin birinci bolumunde okul ve askerlikle ilgili verdigim dogru ve yanlis
+Yazinin birinci bolumunde okul ve askerlikle ilgili verdigim hatali
 kararlari ve bunlarin nasil hayatimi degistirdigini anlatacagim. Bu bolumu
 biraz da askerlik problemleriyle ugrastigim donemi merak eden arkadaslar icin
 yazdigimdan okumadan atlayabilirsiniz. Ikinci kisminda neden daha is bulmadan
@@ -58,9 +58,10 @@ master yapmayi dusundugunuz zaman onunuzdeki engel.
 # Nasil?
 
 Bu sorunun birden cok yaniti var, benim takip ettigim yol ise buraya kendi
-imkanlarimla B1 vizesiyle gelip H1b sponsoru olacak bir sirket bulmak. H1b
-konusunda deneyim sahibi olanlara gore aceleci ve acemice gorunmesi
-muhtemel olabilir lakin benim sartlarim acisindan en dogru olaniydi.  
+imkanlarimla [B1 vizesiyle](http://en.wikipedia.org/wiki/B_visa) gelip [H1b
+sponsoru](http://en.wikipedia.org/wiki/H-1B_visa) olacak bir sirket bulmak. H1b
+konusunda deneyim sahibi olanlara gore aceleci ve acemice gorunmesi muhtemel
+olabilir lakin benim sartlarim acisindan en dogru olaniydi.  
 
 Askerlik sorunumu hallettigimde 23 yasindaydim ve ABD'ye gelmek, burada
 calismak takinti haline gelmisti. Turkiye'deyken vize sponsoru bulmak zor bir
@@ -76,9 +77,10 @@ bulmustum, Turkiye'ye donerken de vize dosyam hazirlanmisti.
 
 San Francisco'ya  gelme hazirliklarina banka kredisi alarak basladim. Tam
 25.000TL para cektim, ki San Francisco icin bu pek yeterli bir para degil.
-Hemen bir vize randevusu alip bir yandan MultiplayerChess.com'u gelistirmeye
-bir yandan da elimdeki parayla doviz ve altin alip ufak tefek giderlerimi
-karsilamaya calistim. 
+Hemen bir vize randevusu alip bir yandan
+[MultiplayerChess.com](http://multiplayerchess.com)'u gelistirmeye bir yandan
+da elimdeki parayla doviz ve altin alip satarak giderlerimi karsilamaya
+calistim. 
 
 Altinin o zamanki egilimi dusustu lakin Guney Kore ve Cin'de yapilan duzenli
 alimlar sayesinde belli bir ivmeyle dogrusal olarak yukseliyordu. Bu alimlarin
@@ -114,11 +116,12 @@ aylik 1800$ odemek durumunda kalabilirsiniz.
 ABD'deki bir diger temel ihtiyaciniz ise yazilim yapmaya devam edebileceginiz
 bir ortam. Otelinizde, starbucks'larda bu isi yapacaginizi dusunuyorsaniz
 bundan suphe duymanizi oneririm. Aylik makul bir ucrete shared calisma ortami
-programlari olan NextSpace gibi coworking mekanlarina olmanizi siddetle
-oneririm. Hem yeni insanlar taniyabileceginiz, happy-hours'lari olan sosyal bir
-ortama girmis oluyorsunuz hem de San Francisco'nun cok kotu isiklandirilmis
-kasvetli Starbucks'lari yerine, 24/7 acik, mutfagi ve toplanti odalari olan,
-guzel ve rahat bir ortama sahip olmanizi sagliyor. 
+programlari olan [NextSpace](http://nextspace.us),
+[HackerDojo](http://hackerdojo.com) gibi coworking mekanlarina olmanizi
+siddetle oneririm. Hem yeni insanlar taniyabileceginiz, happy-hours'lari olan
+sosyal bir ortama girmis oluyorsunuz hem de San Francisco'nun cok kotu
+isiklandirilmis kasvetli Starbucks'lari yerine, 24/7 acik, mutfagi ve toplanti
+odalari olan, guzel ve rahat bir ortama sahip olmanizi sagliyor. 
 
 # H1b
 
@@ -127,25 +130,25 @@ CV'nizde gerekli updateleri yapin. Bu update'lerden en onemlisi tabii ki
 yasadiginiz sehri San Francisco olarak cevirip yeni telefon numaranizi yazmak
 olmali :)
 
-Daha sonraki adim olarak background'inizin tuttugunu butun sirketlere ve buyuk
+Daha sonraki adim olarak background'inizin tuttugu sirketler ve buyuk
 sirketlerin calistigi recruitment firmalariyla temasa gecin. Eger onlar sizi
 bulmadiysa, bir mail gonderip kendinizi tanitabilirsiniz. Ozellikle recruitment
-firmalari size H1b sponsoru bulmak icin sizi sasirtan bir performans
-sergileyecektir. 
+firmalari size H1b sponsoru bulmak icin sasirtici bir performans
+sergileyeceklerdir.
 
 Is aradiginiz surec boyunca hack night gibi hacker etkinliklerine mumkun
 oldugunca katilin. Bu hem network acisindan, hem sosyallesmek acisindan cok
-onemli. Bu tip etkinlikleri Twitter, Meetup.com gibi sitelerden bulup takip
-etmenizi siddetle oneriyorum. Ayrica Google'da Bay Area'ya gelen hackerlar icin
-hazirlanmis guide'lari aradiginizda da oldukca faydali kaynaklar
-bulabilirsiniz.
+onemli. Bu tip etkinlikleri Twitter, [HackerSpaces](http://hackerspaces.org),
+[Meetup](http://meetup.com) gibi sitelerden bulup takip etmenizi siddetle
+oneriyorum. Ayrica Google'da Bay Area'ya gelen hackerlar icin hazirlanmis
+guide'lari aradiginizda da oldukca faydali kaynaklar bulabilirsiniz.
 
 Gorustugunuz sirketler eger size vize almaya karar verirse bir recruiter
 araciligi ile yapacaklari teklifi iletecekler. Su an San Francisco'da normal
-hayat standardi icin gerekli yillik maas en az 80.000$. Ev kiralari 1300
-dolardan basliyor. Bunun yanisira bir de 10.000 dolar civarinda relocation
-bonus'u alirsiniz. Bu arada tum bu kazanclarinizin yuzde kirkini devlete vergi olarak
-kesilecegini hatirlatayim.
+hayat standardi icin gerekli yillik maas en az 80.000$. [Ev kiralari 1300
+dolardan basliyor](http://padmapper.com). Bunun yanisira bir de 10.000 dolar
+civarinda relocation bonus'u alirsiniz. Bu arada tum bu kazanclarinizin yuzde
+kirkini devlete vergi olarak kesilecegini hatirlatayim.
 
 3-4 aylik aktif bir eylem sureci sonunda background'inizin eslestigi bir
 firmayi bulmaniz epey muhtemel. Sirketiniz sureci avukata yonlendirdikten sonra
@@ -153,6 +156,6 @@ yapmaniz gereken tek sey istedikleri belgeleri temin etmek ve basvuru surecinin
 tamamlanmasini beklemek. Bu bekleyis sirasinda bol bol gezmenizi ve Yosemite'de
 kamp kurmanizi siddetle tavsiye ederim.
 
-Sorularinizi ve onerilerinize acigim. E-mail yoluyla, veya baskalarinin da
-faydalanmasi icin comment veya blog basliklari olarak paylasirsaniz vaktim
-yettigince yanitlamaya calisacagim. 
+Sorularinizi ve onerilerinize acigim. [E-mail](mailto:azer@kodfabrik.com)
+yoluyla, veya baskalarinin da faydalanmasi icin comment veya blog basliklari
+olarak paylasirsaniz vaktim yettigince yanitlamaya calisacagim. 
